@@ -1,0 +1,12 @@
+[0;1;31m●[0m nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
+     Active: [0;1;31mfailed[0m (Result: exit-code) since Thu 2023-06-01 17:49:38 IST; 2min 23s ago
+       Docs: man:nginx(8)
+    Process: 42917 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; [0;1;31m(code=exited, status=1/FAILURE)[0m
+
+Jun 01 17:49:38 ubox120 systemd[1]: Starting A high performance web server and a reverse proxy server...
+Jun 01 17:49:38 ubox120 nginx[42917]: nginx: [emerg] open() "/etc/nginx/sites-enabled/myd.com" failed (2: No such file or directory) in /etc/nginx/nginx.conf:62
+Jun 01 17:49:38 ubox120 nginx[42917]: nginx: configuration file /etc/nginx/nginx.conf test failed
+Jun 01 17:49:38 ubox120 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited, status=1/FAILURE[0m
+Jun 01 17:49:38 ubox120 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnginx.service: Failed with result 'exit-code'.[0m
+Jun 01 17:49:38 ubox120 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
